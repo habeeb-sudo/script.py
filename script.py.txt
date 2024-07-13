@@ -1,0 +1,17 @@
+import tkinter as tk
+from tkinter import messagebox
+
+def show_popup():
+    # Create the root window
+    root = tk.Tk()
+    root.withdraw()  # Hide the root window
+
+    # Show a pop-up message box
+    messagebox.showinfo("Pop-up Window", "YOU ARE HACKED !")
+
+    # Destroy the root window
+    root.destroy()
+
+# Call the function to show the pop-up
+if __name__ == "__main__":
+    show_popup()
